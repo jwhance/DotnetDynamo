@@ -30,7 +30,7 @@ namespace DotnetDynamo.Services
             return await _customerRepository.GetAsync(id);
         }
 
-        public async Task<IEnumerable<Customer>> GetAllAsync()
+        public async Task<IEnumerable<Customer?>> GetAllAsync()
         {
             return await _customerRepository.GetAllAsync();
         }

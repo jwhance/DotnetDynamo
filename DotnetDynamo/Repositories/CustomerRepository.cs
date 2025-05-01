@@ -10,7 +10,7 @@ namespace DotnetDynamo.Repositories
     public class CustomerRepository : ICustomerRepository
     {
         private readonly IAmazonDynamoDB _dynamoDB;
-        private readonly string _tableName = "customers";//Table name we created in Dynamo DB
+        private readonly string _tableName = "customers";  //Table name we created in Dynamo DB
 
         public CustomerRepository(IAmazonDynamoDB dynamoDB)
         {

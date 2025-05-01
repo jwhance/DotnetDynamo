@@ -17,10 +17,10 @@ namespace DotnetDynamo.Mappings
                 Factor = customerRequest.Factor,
             };
 
-            if (customerRequest.HerAttributes != null)
+            if (customerRequest.RecordAttributes != null)
             {
                 var attrDictionary = new Dictionary<string, Attributes>();
-                foreach (var attr in customerRequest.HerAttributes)
+                foreach (var attr in customerRequest.RecordAttributes)
                 {
                     var attribute = new Attributes
                     {
@@ -34,7 +34,7 @@ namespace DotnetDynamo.Mappings
                     attrDictionary.Add(attr.Key, attribute);
                 }
 
-                customer.HerAttributes = attrDictionary;
+                customer.RecordAttributes = attrDictionary;
             }
 
             return customer;

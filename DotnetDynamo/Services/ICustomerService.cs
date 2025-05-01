@@ -8,7 +8,7 @@ namespace DotnetDynamo.Services
 
         Task<Customer?> GetAsync(Guid id);
 
-        Task<IEnumerable<Customer>> GetAllAsync();
+        Task<IEnumerable<Customer?>> GetAllAsync();
 
         Task<bool> UpdateAsync(Customer customer);
 

@@ -12,7 +12,7 @@
 
         public decimal Factor { get; set; }
 
-        public Dictionary<string, Attributes> HerAttributes { get; set; } = [];
+        public Dictionary<string, Attributes> RecordAttributes { get; set; } = [];
 
     }
 }
